@@ -24,6 +24,7 @@ var host = new HostBuilder()
             options.GatewayPort = 30000;
         });
 
+        //
         //siloBuilder.ConfigureServices(services => { services.AddSingleton<ITestGrain, TestGrain>(); });
 
     })
