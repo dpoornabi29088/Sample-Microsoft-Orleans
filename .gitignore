@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Test.Silo/config
+/.vs/Test.Silo/FileContentIndex
+/.vs/Test.Silo/v17
+/Test.Client/bin/Debug/net8.0
+/Test.Client/obj
+/Test.Grains/bin/Debug/net8.0
+/Test.Grains/obj
+/Test.IGrain/bin/Debug/net8.0
+/Test.IGrain/obj
+/Test.Silo/.vs
+/Test.Silo/bin/Debug/net8.0
+/Test.Silo/obj
