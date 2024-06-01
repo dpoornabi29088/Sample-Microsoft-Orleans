@@ -37,9 +37,16 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+app.MapGet("/Get", (int value, IGrainFactory grainFactory) =>
+{
+    var testGrain = grainFactory.GetGrain<ITestGrain>("Test");
+    testGrain.AddInstruction(value);
+
+});
+
 app.MapGet("/Add", (int value, IGrainFactory grainFactory) =>
 {
-    var testGrain = grainFactory.GetGrain<ITestGrain>("ITest");
+    var testGrain = grainFactory.GetGrain<ITestGrain>("Test");
     testGrain.AddInstruction(value);
 
 });
